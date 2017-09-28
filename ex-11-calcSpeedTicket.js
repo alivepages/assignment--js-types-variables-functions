@@ -50,7 +50,7 @@ function calcSpeedTicket(speedLimit, speed, protectedArea) {
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
-console.log('ok')
+
 console.assert( calcSpeedTicket(25, 40, false) === 150  )
 console.assert( calcSpeedTicket(65, 72, true) === 300  ) // ?
 console.assert( calcSpeedTicket(75, 97, false) === 250 )
