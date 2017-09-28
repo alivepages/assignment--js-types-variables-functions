@@ -38,16 +38,13 @@ function calcSpeedTicket(speedLimit, speed, protectedArea) {
     return 0;
   }
   if ((speed - speedLimit) >= fastLimit) {
-    console.log('si')
     value = 250
   } else {
-    console.log('no')
     value = 150
   }
   if (protectedArea) {
     value *= 2;
   }
-  console.log(value)
   return value
 }
 
