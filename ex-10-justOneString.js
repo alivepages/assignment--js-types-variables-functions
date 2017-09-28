@@ -7,6 +7,19 @@
  *
  **/
 
+function justOneString(arg1, arg2) {
+  let cond1 = false, cond2 = false
+  if (typeof arg1 === 'string') {
+    cond1 = true
+  }
+  if (typeof arg2 === 'string') {
+    cond2 = true
+  }
+  if ((cond1 || cond2) && !(cond1 && cond2)) {
+    return true
+  }
+  return false;
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 

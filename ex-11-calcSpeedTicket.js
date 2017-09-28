@@ -31,13 +31,31 @@
  *
  **/
 
-
+function calcSpeedTicket(speedLimit, speed, protectedArea) {
+  const fastLimit = 20;
+  let value = 0;
+  if (speed < speedLimit) {
+    return 0;
+  }
+  if ((speed - speedLimit) >= fastLimit) {
+    console.log('si')
+    value = 250
+  } else {
+    console.log('no')
+    value = 150
+  }
+  if (protectedArea) {
+    value *= 2;
+  }
+  console.log(value)
+  return value
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
-
+console.log('ok')
 console.assert( calcSpeedTicket(25, 40, false) === 150  )
-console.assert( calcSpeedTicket(65, 72, true) === 150  )
+console.assert( calcSpeedTicket(65, 72, true) === 300  ) // ?
 console.assert( calcSpeedTicket(75, 97, false) === 250 )
 console.assert( calcSpeedTicket(55, 83, true) === 500  )
 

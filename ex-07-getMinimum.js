@@ -6,6 +6,9 @@
  *
  **/
 
+function getMinimum(n1, n2, n3, n4) {
+  return Math.min(n1, n2, n3, n4)
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 

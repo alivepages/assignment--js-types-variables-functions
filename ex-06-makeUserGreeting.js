@@ -18,7 +18,15 @@
  * NOTE: Don't forget the comma and space and ending puctuation when building the string.
  **/
 
-
+function makeUserGreeting(name, again) {
+  let text = ''
+  if (again) {
+    text = 'Good to see you again, ' + name + '.';
+  } else {
+    text = 'Welcome, ' + name + '!';
+  }
+  return text
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*

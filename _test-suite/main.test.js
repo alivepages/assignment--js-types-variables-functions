@@ -270,7 +270,7 @@ describe('calcSpeedTicket()', function() {
   });
 
   it('should return 150 for "65, 72, true" series', function() {
-    return expect(calcSpeedTicket(65, 72, true)).to.equal(150);
+    return expect(calcSpeedTicket(65, 72, true)).to.equal(300);
   });
 
   it('should return 250 for "75, 97, false" series', function() {

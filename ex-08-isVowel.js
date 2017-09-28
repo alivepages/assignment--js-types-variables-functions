@@ -8,7 +8,23 @@
 
 
 
-
+function isVowel(character) {
+  if (typeof character !== 'string') {
+    return false;
+  }
+  character = character.toLowerCase();
+  if (
+    character === 'a'
+    || character === 'e'
+    || character === 'i'
+    || character === 'o'
+    || character === 'u'
+    || character === 'y' // ¿¿ por que ??
+  ) {
+    return true;
+  }
+  return false;
+}
 
 
  //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

@@ -14,7 +14,32 @@
  *
  **/
 
-
+function getSeasonForMonth(m) {
+  let season = '';
+  if (
+    typeof m !== 'number'
+    || m < 1
+    || m > 12
+  ) {
+    return false;
+  }
+  if (m < 3) {
+    season = 'winter'
+  } else if (m < 6) {
+    season = 'spring'
+  } else if (m < 6) {
+    season = 'spring'
+  } else if (m < 9) {
+    season = 'summer'
+  } else if (m < 11) {
+    season = 'fall'
+  } else if (m < 13) {
+    season = 'winter'
+  } else {
+    return false;
+  }
+  return season;
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 

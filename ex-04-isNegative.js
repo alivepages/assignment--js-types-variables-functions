@@ -6,6 +6,10 @@
  *
  **/
 
+ function isNegative(n) {
+   return n < 0;
+ }
+ 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
 console.assert( isNegative(100) === false )
